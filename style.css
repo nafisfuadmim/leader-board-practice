@@ -17,6 +17,7 @@ main {
 }
 hr {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 /*------------------------------------------------------------------*/
 /*----------------- top player and top blogs styles------------------ */
@@ -44,8 +45,14 @@ hr {
 /*-----------------------------------------------------
                      Top Blogs Styles
 ------------------------------------------------------- */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
 .blog {
     display: flex;
+    align-items: center;
 }
 .top-blog .blog .thumbnail img {
     width: 177px;
@@ -60,4 +67,5 @@ hr {
 }
 .blog-author a {
     color: #562EFF;
+    text-decoration: none;
 }
